@@ -4,14 +4,12 @@
 nip_tal_1 = [1,2,5,6]
 nip_tal_2 = [3,4,7,8]
 
-
 print("Du ser en nipnapper med alle regnbuens farver angivet på toppen.")
 
 farvevalg = input("Skriv navnet på den farve, du ønsker at tage udgangspunkt i: ")
 print("Du har valgt farven " + farvevalg + ". Et godt valg!")
 
 n_bogstaver = len(farvevalg)
-talvalg = []
 
 print("Der er " + str(n_bogstaver) + " bogstaver i din valgte farve.")
 
@@ -26,7 +24,6 @@ def nipnapping(x):
         elif i % 2 != 0:
             print("*nap*: " + str(nip_tal_2))
             i += 1
-
 
 nipnapping(n_bogstaver) #lav standard nip-napping svarende til antal bogstaver
 
@@ -43,7 +40,6 @@ elif n_bogstaver % 2 != 0: #lav nip-napping i omvendt rækkefølge svarende til 
         elif i % 2 != 0:
             print("*nap*: " + str(nip_tal_2))
             i += 1
-
 
 talvalg_2 = input("Tast det tal af ovenstående, som du ønsker at se resulatet for: ")
 
